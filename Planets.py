@@ -12,3 +12,6 @@ class planet:
         
     def keplerian_rotation(self): #Periodo de rotacion kepleriana
         return 2 * np.pi * np.sqrt(self.semi_eje_mayor**3 / (cte.G * self.host_star.masa))
+    
+    def orbital_period(self):
+        return self.keplerian_rotation() * (1 - self.excentricidad**2) / (2 * np.pi)
