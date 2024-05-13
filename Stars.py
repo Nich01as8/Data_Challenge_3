@@ -18,3 +18,6 @@ class star:
     
     def main_sequence_age(self):
         return 10**10 * (self.masa/cte.M_sun)**(-2.5)
+    
+    def main_sequence_lifetime(self):
+        return 10**10 * (self.masa/cte.M_sun)**(-2.5) / 10**9
